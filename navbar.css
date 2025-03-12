@@ -3,17 +3,18 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 div.topnav {
   overflow: hidden;
-  background-color: #e9e9e9;
+  background-color:#2196F3;
 }
 
 div.topnav a { /*Information regarding navbar*/
   float: left;
   display: block;
-  color: black;
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 14px 64px;
   text-decoration: none;
