@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login * UniStays</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="Accomodations.html">Accomodations</a>
+        <a href="About us.html">About us</a>
+        <a class="active" href="signup.html">Sign up</a>
+        <div class="search-container">
+          <form action="/action_page.php">
+            <input class="top-mid" type="text" placeholder="Search.." name="search">
+            <button type="submit" title="Submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+
+        <section>
+          <h1 style="font-family: cursive; text-align: center; color: black; text-decoration: underline #2196f3;">UniStays</h1>
+          <img src="logo3.jpg" alt="UniStays Logo" width="250">
+        <form>
+          <div class="center">
+          <div class="border1">
+            <p style="color: black;" >Log in to UniStays</p>
+          <label for="email"></label><br>
+          <input type="email" id="email" placeholder="Email" size = 25 required /><br>
+          <label for="password"></label><br>
+          <input type="password" id="password" placeholder="Password" size = 25 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required ><br>
+          <br>
+          <a href="Forgot Password">Forgot Password?</a>
+          <input type="submit" value="Login" />
+        </div>
+      </div>
+    </form>
+          <div class="center">
+          <div class="border2">
+            <p style="color: black;" >Don't have an account?</p>
+            <a href="signup.html">Sign up</a>
+          </div>
+        </div>
+        
+      </section>
+      <footer>
+        <div class="center">
+      <p style="color: black;" >You may review our <a href="./Terms.html" >Terms</a>, <a href="./Data Policy.html" >Data Policy</a>
+        and <a href="./Cookie Policy.html" >Cookie Policy</a> by clicking the preceding links.</p>
+      </div>
+      </footer>
+</body>
+</html>
