@@ -1,0 +1,33 @@
+img {
+  display: block;
+  margin: auto;
+  }
+
+  .center {
+    max-width: 500px;
+    margin: auto;
+    padding: 3px;
+    text-align: center;
+  }
+
+  .border1{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #2196F3;
+    width: 250px;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin: 0px;
+    display: inline-block;
+  }
+
+  .border2{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #2196F3;
+    width: 250px;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin: 0px;
+    display: inline-block;
+  }
