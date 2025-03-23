@@ -10,12 +10,11 @@
    git clone <repository-url>
    cd <repository-folder>
    ```
-
-## Install Dependencies
-   ```
+2. Install Dependencies
+   ```bash
    npm install
    ```
-## Start the server
-   ```
+3. Start the server
+   ```bash
    npm start
    ```
