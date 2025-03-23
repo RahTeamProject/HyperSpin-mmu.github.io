@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             accommodations.forEach(accommodation => {
                 var li = document.createElement("li");
+                li.className = "title";
 
                 // Extract the hall name (assuming it's in an <h3> tag)
                 var titleElement = accommodation.querySelector("h3");
@@ -60,16 +61,18 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
                 }
 
-                // Extract price from a specific class (e.g., .price)
+                // Extract price from a specific class
                 var priceElement = accommodation.querySelector(".price");
                 var price = priceElement ? priceElement.textContent.trim() : "Price not available";
 
                 // Create a nested list for features
                 if (features.length > 0) {
                     var nestedList = document.createElement("ul");
+                    nestedList.className = "feature-list"
 
                     features.forEach(feature => {
                         var nestedLi = document.createElement("li");
+                        nestedLi.className = "features"
                         nestedLi.textContent = feature;
                         nestedList.appendChild(nestedLi);
                     });
@@ -78,9 +81,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
 
                 // Add price as a separate list item
-                var priceLi = document.createElement("li");
-                priceLi.textContent = `Price: ${price}`;
-                li.appendChild(priceLi);
+                var chat = document.createElement("button");
+                chat.className = "enquire-btn";
+                chat.id = "enquire"
+                chat.onclick = document.getElementById("myForm").style.display = "block";
+                chat.textContent = "Enquire";
+                li.appendChild(chat);
 
                 // Add the list item to the main accommodation list
                 accommodationList.appendChild(li);

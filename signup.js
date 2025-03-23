@@ -1,4 +1,4 @@
-const select = document.getElementById("birthday");
+const select = document.getElementById("day");
 
   for (let day = 1; day <= 31; day++) {
     let option = document.createElement("option");
@@ -25,3 +25,19 @@ for (let year = 1900; year <= curYear; year++) {
     option.textContent = year;
     select3.appendChild(option);
 }
+
+const submit = document.getElementById("submit-btn");
+const forename = document.getElementById("Forename");
+const surname = document.getElementById("Surname");
+const email = document.getElementById("email");
+const pass = document.getElementById("Password");
+
+submit.onclick = function() {
+  // Check if any input field is empty
+  if (!forename.value || !surname.value || !email.value || !pass.value) {
+    alert("Please fill in all fields before submitting!");
+  } else {
+    // If all fields are filled, clear the page
+    document.getElementById("signin-form").innerHTML = "";
+  }
+};

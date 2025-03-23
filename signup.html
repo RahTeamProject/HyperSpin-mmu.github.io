@@ -5,12 +5,15 @@
   <title>Home</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="navbar.css">
+<link rel="stylesheet" href="webDesign.css">
+<link rel="stylesheet" href="signup.css">
+<link rel="stylesheet" href="chatbox.css">
 </head>
 <body>
 
 <div class="topnav">
   <a href="index.html">Home</a>
-  <a href="Accomodations.html">Accomodations</a>
+  <a href="accommodation.html">Accomodations</a>
   <a href="About us.html">About us</a>
   <a class="active" href="signup.html">Sign up</a>
   <div class="search-container">
@@ -21,54 +24,43 @@
   </div>
 </div>
 
-<form>
-<label for="email">Email:</label>
-<input type="email" id="email" placeholder="Please enter your email" size = 25 required />
-<label for="password">Password:</label>
-<input type="password" id="password" placeholder="Please enter your Password" size = 25 required />
-<br>
-<input type="submit" value="Login" />
+<form class="signin" id="signin-form" method="POST" action="http://localhost:3000/signup">
+  <h1>Sign Up</h1>
+  <label for="first_name"></label>
+    <input class="forename" type="text" id="first_name" name="first_name" placeholder="First Name" required />
+  <label for="last_name"></label>
+  <input class="surname" type="text" id="last_name" name="last_name" placeholder="Surname" required />
+  <br>
+  <label for="email"></label>
+  <input class="email" type="email" id="email" name="email" placeholder="Email address" size = 46 required />
+  <label for="password"></label>
+  <input class="password" type="Password" id="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+  <br>
+  <label for="username"></label>
+  <input class="username" type="text" id="username" name="username" placeholder="Username" size = 18 required/>
+  <br><br>
+  <label for="day"></label>
+  <select id="day" title="day">
+      <!-- Script -->
+  </select>
+  <select id="month" title="month">
+      <!-- Script -->
+  </select>
 
-</form>
-<h1>Create an account</h1>
-<p>It's free and always will be.</p>
+  <select id="year" title="year">
+      <!-- Script -->
+  </select>
+  <br>
+  <input type="radio" id="Female" name="Gender" value="female">
+  <label for="Female">Female</label>
+  <input type="radio" id="Male" name="Gender" value="male">
+  <label for="Male">Male</label> <br>
 
-<form>
-<label for="ForeName"></label>
-<input type="ForeName" id="ForeName" placeholder="First Name" required />
-<label for="Surname"></label>
-<input type="Surname" id="Surname" placeholder="Surname" required />
-<br>
-<label for="number or email"></label>
-<input type="number or email" id="number or email" placeholder="Mobile number or email address" size = 46 required />
-<br>
-<label for="Password"></label>
-<input type="Password" id="Password" placeholder="New Password" size = 46 required />
-<br>
-<h1>Birthday</h1>
-<label for="DOB"></label>
-<select id="birthday" title="birthday">
-    <!-- Script -->
-</select>
-<select id="month" title="month">
-    <!-- Script -->
-</select>
+  <p>By clicking Sign Up, You agree to our <a href="./Terms.html" >Terms</a>, <a href="./Data-Policy.html" >Data Policy</a>
+  and <a href="./Cookie-Policy.html" >Cookie Policy</a>. You may recieve SMS notifications from us and can opt out at any time.</p>
 
-<select id="year" title="year">
-    <!-- Script -->
-</select>
-
-<a href="./Why DOB.html" >Why do i need to provide my date of birth?</a>
-<br>
-<input type="radio" id="Female" name="Gender" value="first">
-<label for="Female">Female</label>
-<input type="radio" id="Male" name="Gender" value="first">
-<label for="Male">Male</label> <br>
-
-<p>By clicking Sign Up, You agree to our <a href="./Terms.html" >Terms</a>, <a href="./Data Policy.html" >Data Policy</a>
-and <a href="./Cookie Policy.html" >Cookie Policy</a>. You may recieve SMS notifications from us and can opt out at any time.</p>
-
-<input type="submit" value="Sign Up" />
+  <input class="submit-btn" id="submit-btn" type="submit" value="Sign Up" />
 
 </form>
 

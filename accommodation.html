@@ -7,12 +7,14 @@
 <link rel="stylesheet" href="navbar.css">
 <link rel="stylesheet" href="accommodation.css">
 <link rel="stylesheet" href="webDesign.css">
+<link rel="stylesheet" href="chatbox.css">
+<link rel="stylesheet" href="post-page.css"
 </head>
 <body>
 
 <div class="topnav">
   <a href="index.html">Home</a>
-  <a class="active" href="Accomodations.html">Accomodations</a>
+  <a class="active" href="accommodation.html">Accomodations</a>
   <a href="About us.html">About us</a>
   <a href="signup.html">Sign up</a>
   <div class="search-container">
@@ -30,7 +32,28 @@
   </ol>
 </div>
 
+<button class="open-button" onclick="openForm()">Chat</button>
+<button class="post-page-btn" id="open-page">Create Post</button>
+
+  <script>
+    document.getElementById('open-page').addEventListener('click', function() {
+      window.location.href = 'createList.html'; // Replace with the URL you want to open
+    });
+  </script>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat Log</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
 <script src="accommodation.js"></script>
+<script src="chatbox.js"></script>
 </body>
 </html>
-

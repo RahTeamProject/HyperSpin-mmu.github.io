@@ -12,6 +12,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 0 auto;
+    text-align: center;
 }
 ol {
     list-style-type: none;
@@ -27,9 +28,28 @@ li {
 }
 .nested-list {
     list-style-type: disc; /* Ensure bullets are shown */
-    padding-left: 20px;
+    text-decoration: none;
     font-size: 14px;
 }
 .loading {
     color: #777;
+}
+li.title {
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+.features {
+    font-weight: lighter;
+    font-size: small;
+    text-align: right;
+}
+.enquire-btn {
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 400px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 15px;
+    cursor: pointer;
 }

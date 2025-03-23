@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    
+}
+
+.signin {
+    text-align: center;
+    background-color: #494949;
+}
+.forename {
+    margin-right: 20px;
+}
+.surname {
+    margin-left: 20px;
+}
+.email {
+    margin-right: 20px;
+    margin-top: 10px;
+    width: 9.24%;
+}
+.password {
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 9.24%;
+}
+.username {
+    margin-top: 10px;
+}
+
+.submit-btn {
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding: 5px 30px 5px 30px;
+    border-radius: 15px;
+}

@@ -1,0 +1,7 @@
+.idea/
+.vscode/
+node_modules/
+.hintrc
+package-lock.json
+package.json
+userInfoServer.js

@@ -1,0 +1,15 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.post-page-btn {
+    background-color: #555;
+    color: white;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15%;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    top: 60px;
+    right: 28px;
+    width: 280px;
+  }
